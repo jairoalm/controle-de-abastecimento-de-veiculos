@@ -1,8 +1,9 @@
 package br.com.jairo.page;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-
 import br.com.jairo.config.DriverFactory;
+
 
 public class BasePage {
 	
@@ -28,5 +29,10 @@ public class BasePage {
 	public String getObterTexto(String id){
 		return getObetrTexto(By.id(id));
 	}
-
+	
+	public String getMensagemAlert(){
+		Alert alert = DriverFactory.getDriver().switchTo().alert();
+		return alert.getText();
+	}
+	
 }
