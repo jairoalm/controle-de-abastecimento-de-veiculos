@@ -22,9 +22,10 @@ public class LoginPage extends BasePage {
 
 	}
 
-	public String acessandoTela(){
-		return getObterTexto("swal2-content");
-
+	public String getTextoAcessoInvalido(){
+		
+	    return getObterTexto("swal2-content");
+	
 	}
 
 	public void btnOK() {

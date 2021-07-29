@@ -16,22 +16,63 @@ public class LoginTest extends Listener {
 	@Test
 	public void test1_interagindoComAlertOps() {
 		login.btnLogin();
-		login.acessandoTela();
+		login.getTextoAcessoInvalido();		
 		login.btnOK();
 		
-		Assert.assertEquals("Usuário ou senha incorretos!!", login.acessandoTela());
-		System.out.println(login.acessandoTela());
+		Assert.assertEquals("Usuário ou senha incorretos!!", login.getTextoAcessoInvalido());
+		
 	}
 	
 	@Test
-	public void test2_conectandoAoControleInternoDoAbastecimento(){
+	public void test2_LogarComUsuarioValido(){
+		login.usuario("frentistateste");
+		login.btnLogin();
+		login.getTextoAcessoInvalido();
+		login.btnOK();
+		
+		Assert.assertEquals("Usuário ou senha incorretos!!", login.getTextoAcessoInvalido());
+	}
+	
+	@Test
+	public void test3_LogarSenhaValida(){
+		login.senha("parateste");
+		login.btnLogin();
+		login.getTextoAcessoInvalido();
+		login.btnOK();
+		
+		Assert.assertEquals("Usuário ou senha incorretos!!", login.getTextoAcessoInvalido());
+	}
+	
+	@Test
+	public void test4_LogarComUsuarioInvalido(){
+		login.usuario("jose");
+		login.senha("parateste");
+		login.btnLogin();
+		login.getTextoAcessoInvalido();
+		login.btnOK();
+		
+		Assert.assertEquals("Usuário ou senha incorretos!!", login.getTextoAcessoInvalido());
+	}
+	
+	@Test
+	public void test5_LogarComSenhaInvalida(){
+		login.usuario("frentistateste");
+		login.senha("jose");
+		login.btnLogin();
+		login.getTextoAcessoInvalido();
+		login.btnOK();
+		
+		Assert.assertEquals("Usuário ou senha incorretos!!", login.getTextoAcessoInvalido());
+	}
+			
+	@Test
+	public void test6_conectandoComUsuarioSenhaValidos(){
 		
 		login.usuario("frentistateste");
 		login.senha("parateste");
 		login.btnLogin();
 		
 		Assert.assertEquals("POSTO TESTE", login.validarAcesso());		
-		System.out.println(login.validarAcesso());
 	}
 
 }
