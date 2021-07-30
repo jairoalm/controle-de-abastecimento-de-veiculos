@@ -14,7 +14,7 @@ public class DriverFactory {
 	
 	public DriverFactory(){		
 	}
-	//Estrutura de browser criada com algumas opçoes
+	//Dependendo do browser que estiver setado na propriedade o case seleciona
 	public static WebDriver getDriver(){
 		
 		if (driver == null){

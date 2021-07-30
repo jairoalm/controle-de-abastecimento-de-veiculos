@@ -1,10 +1,17 @@
 package br.com.jairo.LoginPage;
 
 import org.openqa.selenium.By;
+
+//import br.com.jairo.config.DriverFactory;
 import br.com.jairo.page.BasePage;
 
 public class LoginPage extends BasePage {
 
+	/*public void acessarTelaInicial(){
+		DriverFactory.getDriver().get("https://posto.controlleinterno.com.br/accounts/login/?next=/");
+
+	}*/
+	
 	public void usuario(String texto) {
 		escrever("username", texto);
 	}

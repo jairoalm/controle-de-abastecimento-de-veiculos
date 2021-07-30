@@ -14,7 +14,7 @@ public class LoginTest extends Listener {
 	LoginPage login = new LoginPage();
 	
 	@Test
-	public void test1_interagindoComAlertOps() {
+	public void test1_logarComCamposVazios() {
 		login.btnLogin();
 		login.getTextoAcessoInvalido();		
 		login.btnOK();
@@ -66,8 +66,7 @@ public class LoginTest extends Listener {
 	}
 			
 	@Test
-	public void test6_conectandoComUsuarioSenhaValidos(){
-		
+	public void test6_conectandoComUsuarioSenhaValidos(){		
 		login.usuario("frentistateste");
 		login.senha("parateste");
 		login.btnLogin();
