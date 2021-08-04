@@ -9,7 +9,7 @@ import br.com.jairo.LoginPage.LoginPage;
 import br.com.jairo.config.Listener;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class LoginTest extends Listener {
+public class LoginFrentistaTest extends Listener {
 	
 	LoginPage login = new LoginPage();
 	
