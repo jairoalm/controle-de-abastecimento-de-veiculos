@@ -13,7 +13,7 @@ public class LoginFrentistaTest extends Listener {
 	
 	LoginPage login = new LoginPage();
 	
-	@Test
+	/*@Test
 	public void test1_logarComCamposVazios() {
 		login.btnLogin();
 		login.getTextoAcessoInvalido();		
@@ -63,7 +63,7 @@ public class LoginFrentistaTest extends Listener {
 		login.btnOK();
 		
 		Assert.assertEquals("Usuário ou senha incorretos!!", login.getTextoAcessoInvalido());
-	}
+	}*/
 			
 	@Test
 	public void test6_conectandoComUsuarioSenhaValidos(){		

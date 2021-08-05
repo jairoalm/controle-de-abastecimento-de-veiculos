@@ -38,4 +38,5 @@ public class LoginPage extends BasePage {
 	public void btnOK() {
 		clicarBotao(By.xpath("//button[@class='swal2-confirm swal2-styled']"));
 	}
+	
 }
