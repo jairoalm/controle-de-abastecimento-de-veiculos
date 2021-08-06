@@ -1,4 +1,4 @@
-package br.com.jairo.LoginPage;
+package br.com.jairo.loginPage;
 
 import org.openqa.selenium.By;
 
