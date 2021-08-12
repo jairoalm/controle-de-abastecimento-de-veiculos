@@ -25,7 +25,7 @@ public class LoginRegraDeNegocioTest extends Listener {
 	
 	@Test
 	public void test2_LogarComUsuarioValido(){
-		login.usuario("frentistateste");
+		login.usuario("nome");
 		login.btnLogin();
 		login.getTextoAcessoInvalido();
 		login.btnOK();
@@ -35,7 +35,7 @@ public class LoginRegraDeNegocioTest extends Listener {
 	
 	@Test
 	public void test3_LogarSenhaValida(){
-		login.senha("parateste");
+		login.senha("senha");
 		login.btnLogin();
 		login.getTextoAcessoInvalido();
 		login.btnOK();
@@ -46,7 +46,7 @@ public class LoginRegraDeNegocioTest extends Listener {
 	@Test
 	public void test4_LogarComUsuarioInvalido(){
 		login.usuario("jose");
-		login.senha("parateste");
+		login.senha("senha");
 		login.btnLogin();
 		login.getTextoAcessoInvalido();
 		login.btnOK();
@@ -56,7 +56,7 @@ public class LoginRegraDeNegocioTest extends Listener {
 	
 	@Test
 	public void test5_LogarComSenhaInvalida(){
-		login.usuario("frentistateste");
+		login.usuario("nome");
 		login.senha("jose");
 		login.btnLogin();
 		login.getTextoAcessoInvalido();

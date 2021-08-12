@@ -15,8 +15,8 @@ public class LoginValidoFrentistaTest extends Listener {
 	@Test
 	public void test6_conectandoComUsuarioSenhaValidos(){		
 		site.inicializar();
-		login.usuario("frentistateste");
-		login.senha("parateste");
+		login.usuario("nome");
+		login.senha("senha");
 		login.btnLogin();
 		
 		Assert.assertEquals("POSTO TESTE", login.validarAcesso());		
