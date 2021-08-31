@@ -10,7 +10,7 @@ public class FuncionarioPage extends BasePage {
 	}
 		
 	public void codigo_ID_Veiculo(String abastecimento){
-		escrevendo_E_Apertando_Enter("buscar_abastecimento", abastecimento);
+		escrevendo_e_precionando_enter("buscar_abastecimento", abastecimento);
 	}
 	
 	public void teste(){

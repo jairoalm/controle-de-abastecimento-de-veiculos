@@ -12,12 +12,12 @@ public class LoginPage extends BasePage {
 
 	}*/
 	
-	public void usuario(String texto) {
-		escrever("username", texto);
+	public void usuario(String usuario) {
+		escrever("username", usuario);
 	}
 
-	public void senha(String texto) {
-		escrever("password", texto);
+	public void senha(String senha) {
+		escrever("password", senha);
 	}
 
 	public void btnLogin() {
@@ -29,8 +29,7 @@ public class LoginPage extends BasePage {
 
 	}
 
-	public String getTextoAcessoInvalido(){
-		
+	public String getTextoAcessoInvalido(){		
 	    return getObterTexto("swal2-content");
 	
 	}

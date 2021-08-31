@@ -7,9 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import br.com.jairo.config.DriverFactory;
 
-
-
-
 public class BasePage {
 	
 	//***** Escrever no campo *****//
@@ -28,7 +25,7 @@ public class BasePage {
 		clicarBotao(By.id(id));
 	}
 	//***** Escrevendo no input e apertando a tecla ENTER *****//
-	public void escrevendo_E_Apertando_Enter(String id, String valor){
+	public void escrevendo_e_precionando_enter(String id, String valor){
 		DriverFactory.getDriver().findElement(By.id(id)).sendKeys(valor + Keys.ENTER);		
 	}
 	
@@ -53,5 +50,14 @@ public class BasePage {
 		Alert alert = DriverFactory.getDriver().switchTo().alert();
 		return alert.getText();
 	}
+	
+	//***** Link *****//
+	public void clicar_link(String link){
+		DriverFactory.getDriver().findElement(By.linkText(link)).click();
+	}
+	public void clicar_link2(By by){
+		DriverFactory.getDriver().findElement(by).click();
+	}
+	
 	
 }

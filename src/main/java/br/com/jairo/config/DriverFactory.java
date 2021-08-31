@@ -1,6 +1,5 @@
 package br.com.jairo.config;
 
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -37,7 +36,7 @@ public class DriverFactory {
 			//Serve para definir dimenssões de tela
 			driver.manage().window().maximize();
 			//Tempo de espera antes de iniciar o login
-			DriverFactory.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			//DriverFactory.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
 		}
 		

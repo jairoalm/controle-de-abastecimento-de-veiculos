@@ -12,6 +12,6 @@ import br.com.jairo.test.FuncionarioTest;
 	LoginValidoFrentistaTest.class,
 	FuncionarioTest.class
 })
-public class Suite01 {
+public class SuiteFuncionario {
 
 }

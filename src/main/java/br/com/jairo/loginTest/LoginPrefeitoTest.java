@@ -11,8 +11,8 @@ public class LoginPrefeitoTest extends Listener{
 	
 	@Test
 	public void realizarLoginPrefeitoComUsuarioSenhaValidos(){
-		login.usuario("loign");
-		login.senha("senha");
+		login.usuario("prefeitoteste");
+		login.senha("parateste");
 		login.btnLogin();
 		
 	}

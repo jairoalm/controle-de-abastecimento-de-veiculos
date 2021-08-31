@@ -26,7 +26,7 @@ public class Listener {
 	// 
 	@Rule
 	public TestName testname = new TestName();
-	LoginPage login = new LoginPage();
+	//LoginPage login = new LoginPage();
 	
 	
 	@Before
